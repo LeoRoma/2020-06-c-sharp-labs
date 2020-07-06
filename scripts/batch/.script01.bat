@@ -1,8 +1,9 @@
- echo hello, this is an amazing file in Windows
+echo hello, this is an amazing file in Windows
 
-msg * "hello"
-
-git:
-    git add .
-    git commit -m "$m"
-    git push -u origin master 
+md FolderA
+cd FolderA
+echo "Line01" > file01.txt
+echo "Line02" >> file01.txt
+echo "Line02\nline04" >> file01.txt
+copy file01.txt file02.txt
+type file01.txt
