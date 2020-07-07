@@ -29,14 +29,35 @@ namespace lab_04_wpf_core
 
         static int firstNumber = 0;
         static int secondNumber = 0;
+
+        static string displayNumbers = "";
+        static int total = 0;
         private void ButtonPlus_Click(object sender, RoutedEventArgs e)
         {
-
+            displayNumbers += "+";
         }
 
         private void ButtonEquals_MouseDoubleClick(object sender, RoutedEventArgs e)
         {
+            LabelDisplay.Content = total;
+        }
 
+        private void Button01_Click(object sender, RoutedEventArgs e)
+        {
+            displayNumbers += "1";
+            LabelDisplay.Content = displayNumbers;
+        }
+
+        private void Button02_Click(object sender, RoutedEventArgs e)
+        {
+            displayNumbers += "2";
+            LabelDisplay.Content = displayNumbers;
+        }
+
+        private void Button03_Click(object sender, RoutedEventArgs e)
+        {
+            displayNumbers += "3";
+            LabelDisplay.Content = displayNumbers;
         }
     }
 }
