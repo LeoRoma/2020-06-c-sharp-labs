@@ -24,5 +24,10 @@ namespace lab_07_calculator
         {
             InitializeComponent();
         }
+
+        private void ButtonDelete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
