@@ -7,6 +7,69 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
 
+        </Grid.RowDefinitions>
+        <!--Header-->
+        <Label x:Name="LabelHeader" Content="Calculator" FontWeight="Bold" FontSize="35"
+               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center" Background="Gray" />
+        <!--Row from 1 to 3-->
+        <Button x:Name="Button01" Grid.Row="3" Grid.Column="0" Background="DarkGray" Content="1"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button01_Click" />
+        <Button x:Name="Button02" Grid.Row="3" Grid.Column="1" Background="DarkGray" Content="2"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button02_Click" />
+        <Button x:Name="Button03" Grid.Row="3" Grid.Column="2" Background="DarkGray" Content="3"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button03_Click" />
+        <!--Row from 4 to 6-->
+        <Button x:Name="Button04" Grid.Row="4" Grid.Column="0" Background="DarkGray" Content="4"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button04_Click" />
+        <Button x:Name="Button05" Grid.Row="4" Grid.Column="1" Background="DarkGray" Content="5"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button05_Click" />
+        <Button x:Name="Button06" Grid.Row="3" Grid.Column="2" Background="DarkGray" Content="6"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button06_Click" Height="62" Margin="0,62,0,0" Grid.RowSpan="2" VerticalAlignment="Top" />
+        <!--Row from 7 to 9-->
+        <Button x:Name="Button07" Grid.Row="4" Grid.Column="0" Background="DarkGray" Content="7"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button07_Click" Height="62" Margin="0,62,0,0" Grid.RowSpan="2" VerticalAlignment="Top" />
+        <Button x:Name="Button08" Grid.Row="5" Grid.Column="1" Background="DarkGray" Content="8"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button08_Click" />
+        <Button x:Name="Button09" Grid.Row="5" Grid.Column="2" Background="DarkGray" Content="9"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button09_Click" />
+        <!--Button 0 and comma-->
+        <Button x:Name="Button00" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Background="DarkGray" Content="0"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button00_Click" />
+        <Button x:Name="ButtonFullStop" Grid.Row="6" Grid.Column="2" Background="DarkGray" Content="."
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonFullStop_Click" />
+        <!--Display-->
+        <Label x:Name="LabelDisplay" Content="0" FontSize="35"
+               Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3" HorizontalContentAlignment="Right"
+               VerticalContentAlignment="Center" Background="White" Padding="0 0 30 0" />
+        <!--Delete-->
+        <Button x:Name="ButtonDelete" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="Red" Content="C"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonDelete_Click" />
+        <!--Arithmetic operator's buttons-->
+        <Button x:Name="ButtonDivision" Grid.Row="2" Grid.Column="5" Background="Orange" Content="/"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonDivision_Click"/>
+        <Button x:Name="ButtonMoltiplication" Grid.Row="3" Grid.Column="5" Background="Orange" Content="*"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonMoltiplication_Click"/>
+        <Button x:Name="ButtonSubstraction" Grid.Row="4" Grid.Column="5" Background="Orange" Content="-"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonSubstraction_Click"/>
+        <Button x:Name="ButtonAddition" Grid.Row="5" Grid.Column="5" Background="Orange" Content="+"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonAddition_Click"/>
+        <Button x:Name="ButtonEqual" Grid.Row="5" Grid.Column="3" Background="Orange" Content="="
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonEquals_Click" Height="62" Margin="0,62,0,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
     </Grid>
 </Window>

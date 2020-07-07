@@ -29,5 +29,85 @@ namespace lab_07_calculator
         {
 
         }
+
+        private void Button01_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button02_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button03_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button04_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button05_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button06_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button07_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button08_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button09_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button00_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonFullStop_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonDivision_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonMoltiplication_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonSubstraction_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonAddition_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonEquals_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
