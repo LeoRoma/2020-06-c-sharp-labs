@@ -1,0 +1,8 @@
+Hi I am Leo
+Trying to understand VI how does it work
+
+git commit -m "trying VI"
+
+Co-authored by: anybody <anyemail@gmail.com>
+
+Co-authored by: anyoneelse <email@gmail.com>
