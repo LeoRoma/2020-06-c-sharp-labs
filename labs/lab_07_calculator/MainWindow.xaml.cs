@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace lab_07_calculator
 {
     /// <summary>
@@ -21,7 +23,7 @@ namespace lab_07_calculator
     public partial class MainWindow : Window
     {
         static string display = "";
-
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -29,7 +31,8 @@ namespace lab_07_calculator
 
         private void ButtonDelete_Click(object sender, RoutedEventArgs e)
         {
-
+            display = "";
+            LabelDisplay.Content = display;
         }
 
         private void Button01_Click(object sender, RoutedEventArgs e)
@@ -100,32 +103,54 @@ namespace lab_07_calculator
 
         private void ButtonDivision_Click(object sender, RoutedEventArgs e)
         {
-            display += "/";
+            display += " / ";
             LabelDisplay.Content = display;
         }
 
         private void ButtonMoltiplication_Click(object sender, RoutedEventArgs e)
         {
-            display += "*";
+            display += " * ";
             LabelDisplay.Content = display;
         }
 
         private void ButtonSubstraction_Click(object sender, RoutedEventArgs e)
         {
-            display += "-";
+            display += " - ";
             LabelDisplay.Content = display;
         }
 
         private void ButtonAddition_Click(object sender, RoutedEventArgs e)
         {
-            display += "+";
+            display += " + ";
             LabelDisplay.Content = display;
         }
 
         private void ButtonEquals_Click(object sender, RoutedEventArgs e)
         {
-            //To build at the end 
-            LabelDisplay.Content = display;
+            string[] numbers = display.Split(" ");
+            float firstNumber = float.Parse(numbers[0]);
+            float secondNumber = float.Parse(numbers[2]);
+            string arithmeticOperator = numbers[1];
+            float total = 0;
+
+            switch (arithmeticOperator)
+            {
+                case "+":
+                    total += (firstNumber + secondNumber);
+                    break;
+                case "-":
+                    total += (firstNumber - secondNumber);
+                    break;
+                case "*":
+                    total += (firstNumber * secondNumber);
+                    break;
+                case "/":
+                    total += (firstNumber / secondNumber);
+                    break;
+
+            }
+
+            LabelDisplay.Content = total;
         }
     }
 }
