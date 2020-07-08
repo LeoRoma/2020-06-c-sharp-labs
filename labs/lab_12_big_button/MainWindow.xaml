@@ -29,7 +29,7 @@
                Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center" Background="White" />
         <!--The Big Button-->
-        <Button x:Name="Button01" Grid.Row="2" Grid.Column="1"  Grid.ColumnSpan="2" Grid.RowSpan="2" Background="Red" Content="Please Press Me" FontWeight="Bold" FontSize="35"
+        <Button x:Name="Button01" Grid.Row="2" Grid.Column="1"  Grid.ColumnSpan="2" Grid.RowSpan="2" Background="Yellow" Content="Please Press Me" FontWeight="Bold" FontSize="35"
                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button01_Click" />
     </Grid>
 </Window>
