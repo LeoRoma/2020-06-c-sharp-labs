@@ -24,13 +24,15 @@ namespace lab_12_big_button
     /// </summary>
     public partial class MainWindow : Window
     {
-        string folderName = @"C:\Users\xiajt\Desktop\Sparta Global\Course\C# Week\2020-06-c-sharp-labs\labs\lab_12_big_button";
+        string folderName = @"C:\Users\xiajt\Desktop\Sparta Global\Course\C# Week\2020-06-c-sharp-labs\labs\lab_12_big_button\TheBigButton";
   
         Stopwatch stopWatch = new Stopwatch();
 
         public MainWindow()
         {
             InitializeComponent();
+
+            //Delete files
             for (int i = 0; i < 100; i++)
             {
                 string pathFile = $@"C:\Users\xiajt\Desktop\Sparta Global\Course\C# Week\2020-06-c-sharp-labs\labs\lab_12_big_button\TheBigButton\TheBigButtonTxt{i}.txt";
@@ -49,6 +51,16 @@ namespace lab_12_big_button
                 {
                     Console.WriteLine(ioExp.Message);
                 }
+            }
+
+            //Delete TheBigButton folder
+            try
+            {
+                Directory.Delete(folderName);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("The process failed: {0}", e.Message);
             }
 
         }
