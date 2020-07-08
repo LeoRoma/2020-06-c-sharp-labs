@@ -12,6 +12,13 @@ namespace lab_03_dot_net_core_hello_world
             {
                 Console.WriteLine(item);
             }
+
+            int total = 0;
+            for(int i = 0; i < 5000; i++)
+            {
+                //Console.WriteLine(i);
+                total += i;
+            }
         }
     }
 }
