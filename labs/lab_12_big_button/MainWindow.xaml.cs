@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 using System.Diagnostics;
+using System.Threading;
 
 namespace lab_12_big_button
 {
@@ -35,6 +36,25 @@ namespace lab_12_big_button
             string folderName = @"C:\Users\xiajt\Desktop\Sparta Global\Course\C# Week\2020-06-c-sharp-labs\labs\lab_12_big_button";
             string pathString = System.IO.Path.Combine(folderName, "TheBigButton");
             Directory.CreateDirectory(pathString);
+
+            //string pathFile = @"C:\Users\xiajt\Desktop\Sparta Global\Course\C# Week\2020-06-c-sharp-labs\labs\lab_12_big_button\TheBigButton\TheBigButtonTxt.txt";
+
+            //// The line below will create a text file, my_file.txt, in 
+            //// the Text_Files folder in D:\ drive.
+            //// The CreateText method that returns a StreamWriter object
+            //using (StreamWriter sw = File.CreateText(pathFile))
+
+                Console.WriteLine("Path to my file: {0}\n", pathString);
+
+            for (int i = 0; i < 10; i++)
+            {
+                string pathFile = $@"C:\Users\xiajt\Desktop\Sparta Global\Course\C# Week\2020-06-c-sharp-labs\labs\lab_12_big_button\TheBigButton\TheBigButtonTxt{i}.txt";
+
+                // The line below will create a text file, my_file.txt, in 
+                // the Text_Files folder in D:\ drive.
+                // The CreateText method that returns a StreamWriter object
+                using (StreamWriter sw = File.CreateText(pathFile)) ;
+            }
 
             stopwatch.Stop();
 
