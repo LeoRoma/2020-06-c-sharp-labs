@@ -24,5 +24,10 @@ namespace lab_12_big_button
         {
             InitializeComponent();
         }
+
+        private void Button01_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

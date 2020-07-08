@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label x:Name="LabelHeader" Content="The Big Button" FontWeight="Bold" Foreground="White" FontSize="35"
+               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center" Background="Black" />
+        <Button x:Name="Button01" Grid.Row="2" Grid.Column="1"  Grid.ColumnSpan="2" Grid.RowSpan="2" Background="Red" Content="Please Press Me" FontWeight="Bold" FontSize="35"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Button01_Click" />
     </Grid>
 </Window>
