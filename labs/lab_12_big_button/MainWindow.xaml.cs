@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
+using System.Diagnostics;
 
 namespace lab_12_big_button
 {
@@ -27,6 +29,14 @@ namespace lab_12_big_button
 
         private void Button01_Click(object sender, RoutedEventArgs e)
         {
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
+
+            string folderName = @"C:\Users\xiajt\Desktop\Sparta Global\Course\C# Week\2020-06-c-sharp-labs\labs\lab_12_big_button";
+            string pathString = System.IO.Path.Combine(folderName, "TheBigButton");
+            Directory.CreateDirectory(pathString);
+
+            stopwatch.Stop();
 
         }
     }
