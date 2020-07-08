@@ -41,9 +41,18 @@ namespace lab_10_datatype
             //double likeApplesAsDouble = Convert.ToInt32(likeApples);
             //Console.WriteLine(likeApples); //conversion bool to double
 
-            double pi = 3.141592;
-            pi = Math.Round(pi, 3);
-            Console.WriteLine(pi);
+            //double pi = 3.141592;
+            //pi = Math.Round(pi, 3);
+            //Console.WriteLine(pi); // it rounds from 3.141592 to 3.142
+
+            //int num = -5;
+            //ulong longNum = (ulong)num;
+            //Console.WriteLine(longNum);
+
+            //char numberChar = '4';
+            //int numberInt = numberChar - '0';
+            //Console.WriteLine(numberInt); -- any character number from 0 to 9 just need to substract the wanted character - the '0'
+
         }
     }
 }
