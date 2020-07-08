@@ -22,10 +22,12 @@ namespace lab_09_logging
                 File.AppendAllText("Output.log", $"The value of i is {i} at {DateTime.Now} \n");
                 Thread.Sleep(500);
             }
+
             stopwatch.Stop();
-            Console.WriteLine($"Elapsed: {stopwatch.Elapsed}");
-            Console.WriteLine($"ElapsedMilliseconds: {stopwatch.ElapsedMilliseconds}");
-            Console.WriteLine($"ElsapsedTicks: {stopwatch.ElapsedTicks}");
+
+            Console.WriteLine($"Elapsed: {stopwatch.Elapsed}"); //seconds
+            Console.WriteLine($"ElapsedMilliseconds: {stopwatch.ElapsedMilliseconds}"); // ms
+            Console.WriteLine($"ElsapsedTicks: {stopwatch.ElapsedTicks}"); // 10 to power -7 seconds
             #endregion
 
             //Read our log file on console
