@@ -9,11 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_02_framework", "lab_02_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_03_dot_net_core_hello_world", "lab_03_dot_net_core_hello_world\lab_03_dot_net_core_hello_world.csproj", "{4C22BEFC-8782-4A2F-9A36-188204CD4EBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_04_wpf_core", "lab_04_wpf_core\lab_04_wpf_core.csproj", "{42D9BC44-34BA-4B07-BBFA-697D6F220FA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_04_wpf_core", "lab_04_wpf_core\lab_04_wpf_core.csproj", "{42D9BC44-34BA-4B07-BBFA-697D6F220FA4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_05_asp", "lab_05_asp\lab_05_asp.csproj", "{C7A4C511-B980-4F8B-BBF3-A04665207A29}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_06_mvc", "lab_06_mvc\lab_06_mvc.csproj", "{D48EE672-0971-4D0F-AD1F-3B3B14063866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_13_operators", "lab_13_operators\lab_13_operators.csproj", "{B06A8FBE-9E8E-4A9A-93CE-BCF0B4E34EF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D48EE672-0971-4D0F-AD1F-3B3B14063866}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D48EE672-0971-4D0F-AD1F-3B3B14063866}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D48EE672-0971-4D0F-AD1F-3B3B14063866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B06A8FBE-9E8E-4A9A-93CE-BCF0B4E34EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B06A8FBE-9E8E-4A9A-93CE-BCF0B4E34EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B06A8FBE-9E8E-4A9A-93CE-BCF0B4E34EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B06A8FBE-9E8E-4A9A-93CE-BCF0B4E34EF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
