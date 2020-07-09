@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace lab_03_dot_net_core_hello_world
 {
@@ -12,6 +13,22 @@ namespace lab_03_dot_net_core_hello_world
             {
                 Console.WriteLine(item);
             }
+            #region mainCodeBlock
+            int total = 0;
+            for(int i = 0; i < 5; i++)
+            {
+                Console.WriteLine(i);
+                total += i;
+            }
+
+            #endregion
+
+            // Console
+            // Debug
+            //Trace --> Both of them use Using.System.Diagnostic;
+            Console.WriteLine("output console");
+            Debug.WriteLine("outputting debug output");
+            Trace.WriteLine("outputting trace output");
         }
     }
 }
