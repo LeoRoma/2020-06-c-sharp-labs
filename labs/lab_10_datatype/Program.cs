@@ -49,9 +49,11 @@ namespace lab_10_datatype
             //ulong longNum = (ulong)num;
             //Console.WriteLine(longNum);
 
-            //char numberChar = '4';
+            //char numberChar = '4'; -- character we declare it with 'Single quote'.
             //int numberInt = numberChar - '0';
             //Console.WriteLine(numberInt); -- any character number from 0 to 9 just need to substract the wanted character - the '0'
+
+
 
         }
     }
