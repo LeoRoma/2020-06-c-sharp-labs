@@ -7,7 +7,9 @@ namespace IterationLib
         // returns the lowest number in the array nums
         public static int Lowest(int[] nums)
         {
-            return 0;
+            Array.Sort(nums);
+            int lowerNum = nums[0];
+            return lowerNum;
         }
 
         // returns the sum of all numbers between 1 and n inclusive that are divisible by either 2 or 5

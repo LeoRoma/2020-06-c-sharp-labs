@@ -28,23 +28,23 @@ namespace SelectionExercisesLib
         // Throw an ArgumentException if age is less than 0
         public static string TicketType(int age)
         {
-            if(age >= 18 && age <= 59)
+            if(age >= 60)
+            {
+                return "OAP";
+            }
+            else if(age >= 18)
             {
                 return "Standard";
             }
-            else if (age >= 60)
-            {
-                return "OAP";
-            }    
-            else if (age >= 13 && age <= 17)
+            else if(age >= 13)
             {
                 return "Student";
             }
-            else if (age >= 5 && age <= 12)
+            else if(age >= 5)
             {
                 return "Child";
             }
-            else if (age < 5)
+            else if(age >= 0)
             {
                 return "Free";
             }
