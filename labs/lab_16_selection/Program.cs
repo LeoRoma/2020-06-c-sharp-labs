@@ -8,11 +8,7 @@ namespace lab_16_selection
         {
             Console.WriteLine(PassFail(39));
 
-            int x = 5;
-            int y = 10;
 
-            var result = x > y ? "x is greater than y" : "x is less than y";
-            Console.WriteLine(result);
         }
 
         public static string PassFail(int mark)
@@ -62,3 +58,8 @@ namespace lab_16_selection
 
     }
 }
+//Ternary
+//int x = 5;
+//int y = 10;
+
+//var result = x > y ? "x is greater than y" : "x is less than y"; 
