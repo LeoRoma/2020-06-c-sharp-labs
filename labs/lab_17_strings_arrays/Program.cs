@@ -55,7 +55,7 @@ namespace lab_19_string_arrays
             //int sum = 1 + input2;
 
             StringBuilder sb = new StringBuilder("Hello");
-            sb.Append("\nHello Engineering 66.\n Especially Nish");
+            sb.Append("\nHello Engineering 66.\nEspecially Nish");
             Console.WriteLine(sb);
         }
 
