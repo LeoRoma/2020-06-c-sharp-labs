@@ -8,7 +8,34 @@ namespace CollectionsExercisesLib
         /* removes and returns the next num entries in the queue, as a comma separated string */
         public static string NextInQueue(int num, Queue<string> queue)
         {
-            return "Not implemented";
+            {
+                string dequeued = "";
+                if (num == 0)
+                {
+                    return dequeued;
+                }
+                else if (num > queue.Count)
+                {
+                    if (num > queue.Count)
+                    {
+                        dequeued = queue.Dequeue();
+                        for (int i = 0; i <= queue.Count + 2; i++)
+                        {
+                            dequeued += $", {queue.Dequeue()}";
+                        }
+                    }
+                }
+                else
+                {
+                    dequeued = queue.Dequeue();
+                    for (int i = 0; i < num - 1; i++)
+                    {
+                        dequeued += $", {queue.Dequeue()}";
+                    }
+                }
+                
+                return dequeued;
+            }
         }
 
         /* uses a Stack to create and return array of ints in reverse order to the one supplied */
