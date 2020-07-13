@@ -9,7 +9,23 @@ namespace CollectionsExercisesLib
         // that are multiples of 5
         public static List<int> MakeFiveList(int max)
         {
-            throw new NotImplementedException();
+            var listOfFive = new List<int>();
+            if (max < 5)
+            {
+                listOfFive.Add(0);
+            }
+            else 
+            {
+                for (int i = 0; i <= max; i++)
+                {
+                    if (i % 5 == 0)
+                    {
+                        listOfFive.Add(i);
+                    }
+                }
+            }
+           
+            return listOfFive;
         }
 
         // return the average of all the numbers in argList 
