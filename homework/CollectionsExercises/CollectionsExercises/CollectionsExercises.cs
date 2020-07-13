@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-
+using System;
 namespace CollectionsExercisesLib
 {
     public class CollectionsExercises
@@ -18,7 +18,20 @@ namespace CollectionsExercisesLib
         // using a Dictionary, counts and returns (as a string) the occurence of the digits 0-9 in the given string
         public static string CountDigits(string input)
         {
-            return "Not implemented";
+            Dictionary <string, int> digitCounts = new Dictionary<string, int>();
+            foreach (char number in input)
+            {
+                if(Char.IsDigit(number))
+                {
+                    digitCounts[number]++;
+                }
+                else
+                {
+                    string numberToString = number.ToString();
+                    digitCounts.Add(numberToString, 1);
+                }
+            }
+            return digitCounts;
         }
     }
 }

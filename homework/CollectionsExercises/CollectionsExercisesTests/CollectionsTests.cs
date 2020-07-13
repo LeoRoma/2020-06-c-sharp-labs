@@ -3,6 +3,7 @@ using NUnit.Framework;
 using CollectionsExercisesLib;
 using System.Collections.Generic;
 using NUnit.Framework.Internal;
+using System.Linq;
 
 namespace CollectionsExercisesTests
 {

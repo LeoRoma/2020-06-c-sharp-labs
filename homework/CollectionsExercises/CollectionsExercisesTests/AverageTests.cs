@@ -13,6 +13,7 @@ namespace CollectionsExercisesTests
             var result = ListExercises.Average(argList);
             Assert.AreEqual(0, result);
         }
+
         [Test]
         public void GivenAListIsTheAverageCorrect()
         {
