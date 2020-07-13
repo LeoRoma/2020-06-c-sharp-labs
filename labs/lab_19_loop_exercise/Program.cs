@@ -6,42 +6,32 @@ namespace lab_19_loop_exercise
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Select an option to run a loop");
+            Console.WriteLine("1: prints from 1 to 300");
+            Console.WriteLine("2: for every 100 shows my name");
+            Console.WriteLine("3: each 5 show with 'th'");
+            Console.WriteLine("4: countdown from 50 to 0");
+
+            int userInput = Console.ReadLine();
             Loop();
         }
 
         static void Loop()
         {
-            int digit = 5;
-            for (int n = 1; n <= 300; n++)
+            for (int i = 1; i <= 300; i++)
             {
-                if(n % 100 == 0)
+                long lastDigit = i % (10);
+                if (i % 100 == 0)
                 {
                     Console.WriteLine("Hi I am Leo");
                 }
-                else if (n == digit || isDigitPresent())
+                else if (i == 5 || i == 105 || i == 205)
                 {
-                    Console.Write($"{n}th");
+                    Console.WriteLine($"{i}th");
                 }
-                Console.WriteLine(n);
-                
+                Console.WriteLine(i);
             }
         }
 
-        static bool isDigitPresent()
-        {
-            int digit = 5;
-            int x = 1;
-            while (x < 300)
-            {
-                if (x % 10 == digit)
-                    break;
-
-                x = x / 10;
-            }
-
-            // If loop broke 
-            return (x > 0);
-
-        }
     }
 }
