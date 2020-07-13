@@ -23,21 +23,25 @@ namespace lab_19_loop_exercise
 
         static void UserSelection(int userInput)
         {
-            switch(userInput)
+            for (int i = 1; i <= 300; i++)
             {
-                case 1:
-                    Loop1();
-                    break;
-                case 2:
-                    Loop2();
-                    break;
-                case 3:
-                    Loop3();
-                    break;
-                case 4:
-                    Loop4();
-                    break;
+                switch (userInput)
+                {
+                    case 1:
+                        Console.WriteLine(i);
+                        break;
+                    case 2:
+                        Loop2();
+                        break;
+                    case 3:
+                        Loop3();
+                        break;
+                    case 4:
+                        Loop4();
+                        break;
+                }
             }
+            
         }
 
         static void Loop1()
