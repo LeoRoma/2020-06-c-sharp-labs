@@ -10,20 +10,15 @@ namespace CollectionsExercisesLib
         public static List<int> MakeFiveList(int max)
         {
             var listOfFive = new List<int>();
-            if (max < 5)
+           
+            for (int i = 1; i <= max; i++)
             {
-                listOfFive.Add(0);
-            }
-            else 
-            {
-                for (int i = 0; i <= max; i++)
+                if (i % 5 == 0)
                 {
-                    if (i % 5 == 0)
-                    {
-                        listOfFive.Add(i);
-                    }
+                    listOfFive.Add(i);
                 }
             }
+            
            
             return listOfFive;
         }
