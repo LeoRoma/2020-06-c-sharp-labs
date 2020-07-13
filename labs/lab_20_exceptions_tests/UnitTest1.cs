@@ -1,4 +1,6 @@
 using NUnit.Framework;
+using System;
+using lab_20_exceptions;
 
 namespace lab_20_exceptions_tests
 {
@@ -9,10 +11,12 @@ namespace lab_20_exceptions_tests
         {
         }
 
-        [Test]
-        public void Test1()
+        [TestCase(-1)]
+        [TestCase(4)]
+        public void Test1(int pos)
         {
-            Assert.Pass();
+            var ex = Assert.Throws<ArgumentException>(() => Program.AddBeatle(pos, "Brian"));
+            Assert.AreEqual($"The Beatles do not have a position {pos}", ex.Message, "Exception message not correct");
         }
     }
 }
