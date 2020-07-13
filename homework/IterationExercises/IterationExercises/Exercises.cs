@@ -2,14 +2,21 @@
 
 namespace IterationLib
 {
+
+    public class Program
+    {
+       
+        public static void Main(int[] nums)
+        {
+            //ignore
+        }
+    }
     public class Exercises
     {
         // returns the lowest number in the array nums
         public static int Lowest(int[] nums)
         {
-            Array.Sort(nums);
-            int lowerNum = nums[0];
-            return lowerNum;
+            return 0;
         }
 
         // returns the sum of all numbers between 1 and n inclusive that are divisible by either 2 or 5
