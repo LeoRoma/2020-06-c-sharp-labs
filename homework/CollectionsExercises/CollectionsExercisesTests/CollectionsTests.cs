@@ -1,4 +1,5 @@
 ﻿using System;
+
 using NUnit.Framework;
 using CollectionsExercisesLib;
 using System.Collections.Generic;
@@ -84,3 +85,14 @@ namespace CollectionsExercisesTests
         }
     }
 }
+
+using System.Collections.Generic;
+using System.Text;
+
+namespace CollectionsExercisesTests
+{
+	class Class1
+	{
+	}
+}
+

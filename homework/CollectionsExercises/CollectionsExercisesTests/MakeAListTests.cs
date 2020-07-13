@@ -1,3 +1,4 @@
+
 ﻿using NUnit.Framework;
 using CollectionsExercisesLib;
 using System.Collections.Generic;
@@ -54,3 +55,15 @@ namespace CollectionsExercisesTests
         }
     }
 }
+
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CollectionsExercisesTests
+{
+	class MakeAListTests
+	{
+	}
+}
+

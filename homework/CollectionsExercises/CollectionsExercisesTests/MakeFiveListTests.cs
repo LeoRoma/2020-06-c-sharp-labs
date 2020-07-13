@@ -1,3 +1,4 @@
+
 ﻿using NUnit.Framework;
 using CollectionsExercisesLib;
 
@@ -57,4 +58,15 @@ namespace CollectionsExercisesTests
             Assert.AreEqual(95, result[lastPos]);
         }
     }
+}
+
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CollectionsExercisesTests
+{
+	class MakeFiveListTests
+	{
+	}
 }
