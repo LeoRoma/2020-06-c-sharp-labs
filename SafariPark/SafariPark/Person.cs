@@ -5,7 +5,7 @@ using System.Text;
 namespace SafariPark
 {
     //Class is a reference type of data type, can store more data.
-    class Person
+    public class Person
     {
         //Attributes
         private string _firstName; //Private can be accessed only by this class 

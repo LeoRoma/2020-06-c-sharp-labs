@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using SafariPark;
 
 namespace SafariParkTest
 {
@@ -9,10 +10,21 @@ namespace SafariParkTest
         {
         }
 
-        [Test]
-        public void Test1()
+        [TestCase("Cathy", "French", "Cathy French")]
+        public void GetFullNameTest(string fName, string lName, string expected)
         {
-            Assert.Pass();
+            var instance = new Person(fName, lName);
+            var actual = instance.GetFullName();
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestCase(25, 25)]
+        public void GetAgeTest(int age, int expected)
+        {
+            Person person = new Person("Leo", "Xia") { Age = 25};
+
+            
+            Assert.AreEqual(expected, person.Age);
         }
     }
 }
