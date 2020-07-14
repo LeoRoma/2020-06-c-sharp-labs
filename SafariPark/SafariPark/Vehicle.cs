@@ -23,12 +23,18 @@ namespace SafariPark
             
         }
 
-        public int Move(int times)
+        public string Move()
         {
-
-            return ;
+            Position += _speed; 
+            return "Moving along";
         }
 
-        
+        public string Move(int times)
+        {
+            Position += times * 10;
+            return "Moving along 2 times";
+        }
+
+
     }
 }
