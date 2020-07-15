@@ -7,7 +7,7 @@ namespace SafariPark
     //Class is a reference type of data type, can store more data.
     public class Person
     {
-        //Attributes
+        //Attributes or Fields
         private string _firstName; //Private can be accessed only by this class 
         private string _lastName;
         private int _age;
@@ -47,5 +47,9 @@ namespace SafariPark
             return $"{_firstName} {_lastName}";
         }
 
+        public override string ToString()
+        {
+            return $"Name: {base.ToString()} Age: {Age}";
+        }
     }
 }

@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.SymbolStore;
 using System.Text;
 
 namespace SafariPark
 {
-    class Hunter : Person
+    public class Hunter : Person
     {
         private string _camera;
 
@@ -22,6 +23,25 @@ namespace SafariPark
         public string Shoot()
         {
             return $"{GetFullName()} has taken a photo with their {_camera}";
+        }
+
+        public override string ToString()
+        {
+            return $"{base.ToString()} Camera {_camera}";
+        }
+    }
+
+    public class MonsterHunter : Hunter
+    {
+        private string _weapon;
+        public MonsterHunter(string fName, string lName, string camera, string weapon) : base(fName, lName, camera)
+        {
+            _weapon = weapon;
+        }
+
+        public override string ToString()
+        {
+            return $"{base.ToString()} Weapon {_weapon}";
         }
     }
 }

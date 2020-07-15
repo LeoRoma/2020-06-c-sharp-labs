@@ -18,12 +18,12 @@ namespace SafariPark
             //Console.WriteLine(cathy.Age);
             //Console.WriteLine(pt3d.y);
 
-            //Hunter bryn = new Hunter("Bryn", "Morley", "Sony") { Age = 25 };
+            Hunter bryn = new Hunter("Bryn", "Morley", "Sony") { Age = 25 };
             //Console.WriteLine(bryn.Shoot());
             //Console.WriteLine(bryn.Age);
 
             Hunter jimmy = new Hunter();
-            Console.WriteLine(jimmy.Shoot());
+            Console.WriteLine(bryn.ToString()); //returns the runtime type of the current instance.
         }
 
         static void DemoMethod(Point3D pt, Person p)
