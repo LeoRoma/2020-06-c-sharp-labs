@@ -9,14 +9,14 @@ namespace SafariPark
         {
             /// Having overload constructor we can instantiate 3 differents objects with 3 differents attributes
             // We can set attributes by using the properties if we have a default constructor Eg: Person leo = new Person(){Leo, Xia};
-            Person cathy = new Person("Cathy", "French") { Age = 14 };
-            //Person nish = new Person();
-            //Person phil = new Person("Phil", "Idk", 35);
-            
-            Point3D pt3d = new Point3D(5, 8, 1);
-            DemoMethod(pt3d, cathy);
-            Console.WriteLine(cathy.Age);
-            Console.WriteLine(pt3d.y);
+            //Person cathy = new Person("Cathy", "French") { Age = 14 };
+            ////Person nish = new Person();
+            ////Person phil = new Person("Phil", "Idk", 35);
+
+            //Point3D pt3d = new Point3D(5, 8, 1);
+            //DemoMethod(pt3d, cathy);
+            //Console.WriteLine(cathy.Age);
+            //Console.WriteLine(pt3d.y);
 
             //Console.WriteLine(cathy.GetFullName());
             //Person leo = new Person("Leo", "Xia");
@@ -24,7 +24,15 @@ namespace SafariPark
             //cathy.Age = 22;
             //Console.WriteLine($"Cathy is {cathy.Age}");
             //Console.WriteLine(cathy.GetFullName);
-            
+
+            Airplane a = new Airplane(200, 100, "JetsRuSs") { NumPassengers = 150 };
+            a.Ascend(500);
+            Console.WriteLine(a.Move(3));
+            Console.WriteLine(a);
+            a.Descend(200);
+            Console.WriteLine(a.Move());
+            a.Move();
+            Console.WriteLine(a);
         }
 
         static void DemoMethod(Point3D pt, Person p)
