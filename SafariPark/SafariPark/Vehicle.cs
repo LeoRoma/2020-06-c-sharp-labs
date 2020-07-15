@@ -8,19 +8,33 @@ namespace SafariPark
     {
         private int _capacity;
         private int _numPassengers;
-        private int _speed;
+        private int _speed = 10;
 
-        public int Position { get; set; }
-        public int NumPassangers { get; set; }
+        public int Position { get; private set; }
+        public int NumPassengers 
+        {
+            get { return _numPassengers; }
+            set
+            {
+                if (value >= 0 && value <= _capacity)
+                {
+                    _numPassengers = value;
+                }
+                else if (value > _capacity)
+                {
+                    _numPassengers = _capacity;
+                }
+            }
+        }
 
-        public Vehicle(int capacity, int speed = 10)
+        public Vehicle(int capacity = 6, int speed = 10)
         {
             _capacity = capacity;
             _speed = speed;
         }
         public Vehicle()
         {
-            
+           
         }
 
         public string Move()
@@ -31,8 +45,8 @@ namespace SafariPark
 
         public string Move(int times)
         {
-            Position += times * 10;
-            return "Moving along 2 times";
+            Position += times * _speed;
+            return $"Moving along {times} times";
         }
 
 

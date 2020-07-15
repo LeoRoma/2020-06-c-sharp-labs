@@ -27,5 +27,18 @@ namespace VehicleTest
             Assert.AreEqual(40, v.Position);
             Assert.AreEqual("Moving along", result);
         }
+
+        [TestCase(-1, 0)] //no. of passengers = -1, expect 0
+        [TestCase(0, 0)]
+        [TestCase(1, 1)]
+        [TestCase(3, 3)]
+        [TestCase(5, 5)]
+        [TestCase(6, 5)] //fail
+        public void VehicleCapacityTests(int numPassengers, int expectedPassengers)
+        {
+            Vehicle v = new Vehicle(5);
+            v.NumPassengers = numPassengers;
+            Assert.AreEqual(expectedPassengers, v.NumPassengers);
+        }
     }
 }
