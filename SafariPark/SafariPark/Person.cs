@@ -49,7 +49,7 @@ namespace SafariPark
 
         public override string ToString()
         {
-            return $"Name: {base.ToString()} Age: {Age}";
+            return $"{base.ToString()} Name: {GetFullName()}  Age: {Age}";
         }
     }
 }

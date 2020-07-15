@@ -27,7 +27,7 @@ namespace SafariPark
 
         public override string ToString()
         {
-            return $"{base.ToString()} Camera {_camera}";
+            return $"{base.ToString()} Camera: {_camera}";
         }
     }
 
@@ -39,9 +39,9 @@ namespace SafariPark
             _weapon = weapon;
         }
 
-        public override string ToString()
+        public sealed override string ToString()//Sealed: it can't intherite from it
         {
-            return $"{base.ToString()} Weapon {_weapon}";
+            return $"{base.ToString()} Weapon: {_weapon}";
         }
     }
 }
