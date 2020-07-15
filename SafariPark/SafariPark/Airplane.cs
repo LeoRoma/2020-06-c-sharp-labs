@@ -8,10 +8,12 @@ namespace SafariPark
     {
         private string _airline;
         private int _altitude;
+
         public Airplane(int capacity, int speed, string airline) : base(capacity, speed)
         {
             _airline = airline;
         }
+
         public void Ascend(int distance)
         {
             _altitude = distance;
