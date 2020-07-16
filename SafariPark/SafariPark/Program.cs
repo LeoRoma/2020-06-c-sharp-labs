@@ -10,6 +10,7 @@ namespace SafariPark
         {
             // Having overload constructor we can instantiate 3 differents objects with 3 differents attributes
             // We can set attributes by using the properties if we have a default constructor Eg: Person leo = new Person(){Leo, Xia};
+
             //Person cathy = new Person("Cathy", "French") { Age = 14 }; //{Age= 14} => Object initialiser
             //Person nish = new Person();
             //Person phil = new Person("Phil", "Idk", 35);
@@ -33,6 +34,7 @@ namespace SafariPark
             {
                 Console.WriteLine(item);
             }
+
         }
 
         static void DemoMethod(Point3D pt, Person p)
