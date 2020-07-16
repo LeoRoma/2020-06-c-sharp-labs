@@ -10,6 +10,9 @@ namespace DataTypesPt2Lib
     {
         public static int AgeAt(DateTime birthDate, DateTime date)
         {
+<<<<<<< HEAD
+            return -1;
+=======
             var age = DateTime.Now - birthDate;
             int age2 = (int)((age.Days) / 365.25);
             if (date < birthDate)
@@ -19,10 +22,18 @@ namespace DataTypesPt2Lib
            
             
             return age2;
+>>>>>>> master
         }
 
         public static string FormatDate(DateTime date)
         {
+<<<<<<< HEAD
+            return string.Empty;
+        }
+        public static string GetMonthString(DateTime date)
+        {
+            return string.Empty;
+=======
             var date2 = date.ToString("yy/dd/MMM");
             return date2;
         }
@@ -30,10 +41,14 @@ namespace DataTypesPt2Lib
         {
             var date2 = date.ToString("MMMM");
             return date2;
+>>>>>>> master
         }
 
         public static string Fortune(Suit suit)
         {
+<<<<<<< HEAD
+            return string.Empty;
+=======
             switch(suit)
             {
                 case (Suit.HEARTS):
@@ -48,6 +63,7 @@ namespace DataTypesPt2Lib
 
             return "Hello";
         
+>>>>>>> master
         }
     }
 }

@@ -30,7 +30,11 @@ namespace DataTypesPt2Tests
             var birthDate = new DateTime(1992, 8, 21);
             var date = new DateTime(1992, 5, 27);
             var ex = Assert.Throws<ArgumentException>(() => Methods.AgeAt(birthDate, date));
+<<<<<<< HEAD
+            Assert.AreEqual("Error - birthDate is in the future", ex.Message);
+=======
             //Assert.AreEqual("Error - birthDate is in the future", ex.Message);
+>>>>>>> master
         }
 
         [Test]
