@@ -9,6 +9,7 @@ namespace Airplane_Test
         [Test]
         public void Test1()
         {
+            Airplane a = new Airplane(200, 100, "JetRuss") { NumPassengers = 150 };
         }
     }
 }

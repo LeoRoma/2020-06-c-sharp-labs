@@ -27,14 +27,14 @@ namespace SafariPark
         public override string Move()
         {
             Position += _speed;
-            return $"Moving along at an altitude of {_altitude} metres.";
+            return $"{base.Move()} at an altitude of {_altitude} metres.";
         }
 
         public override string Move(int times)
         {
             Position += times * _speed;
             
-            return $"Moving along {times} times at an altitude of {_altitude} metres.";
+            return $"{base.Move(times)} times at an altitude of {_altitude} metres.";
             
         }
 
