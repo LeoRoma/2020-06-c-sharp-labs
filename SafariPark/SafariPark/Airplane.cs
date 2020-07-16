@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SafariPark
 {
-    class Airplane : Vehicle
+    public class Airplane : Vehicle
     {
         private string _airline;
         private int _altitude;
@@ -14,14 +14,20 @@ namespace SafariPark
             _airline = airline;
         }
 
+        public Airplane(int capacity) : base(capacity)
+        {
+            
+        }
+
         public void Ascend(int distance)
         {
-            _altitude = distance;
+            _altitude += distance;
         }
 
         public void Descend(int distance)
         {
-            _altitude = distance + _speed;
+            if (_altitude > distance) _altitude -= distance;
+            else _altitude = 0;
         }
 
         public override string Move()
