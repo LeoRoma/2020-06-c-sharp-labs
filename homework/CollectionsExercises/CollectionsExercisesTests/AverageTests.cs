@@ -1,5 +1,6 @@
 using NUnit.Framework;
 
+
 namespace CollectionsExercisesTests
 {
 	public class Tests
@@ -15,4 +16,5 @@ namespace CollectionsExercisesTests
 			Assert.Pass();
 		}
 	}
+
 }
