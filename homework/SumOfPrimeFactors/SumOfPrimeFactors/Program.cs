@@ -12,9 +12,9 @@ namespace SumOfPrimeFactors
         static int GetPrimeFactors(int number)
         {
             int total = 0;
-            for (int i = 2; i <= number; i++)
+            while(number !=1 )
             {
-                while(PrimeChecker(i) == true)
+                for (int i = 2; i <= number; i++)
                 {
                     if (number % i == 0 && PrimeChecker(i) == true)
                     {
@@ -22,12 +22,11 @@ namespace SumOfPrimeFactors
                         Console.WriteLine(number);
                         total += i;
                         number /= i;
-                        
+
                     }
                 }
-                
-
             }
+            
             return total;
         }
 
