@@ -5,7 +5,7 @@ namespace RadioApp
     public class Radio
     {
         private int _channel = 1;
-        public bool On;
+        private bool _on;
         private const int _defaultVolume = 30;
         private const int _maxVolume = 100;
         private const int _minVolume = 0;
@@ -14,7 +14,7 @@ namespace RadioApp
         public int Channel 
         {
             get { return _channel; }  
-            set { if (value > 0 && value <= 4 && On == true) _channel = value; }
+            set { if (value > 0 && value <= 4 && _on == true) _channel = value; }
         }
 
         public Radio()
@@ -24,7 +24,7 @@ namespace RadioApp
 
         public string Play()
         {
-            if (On == true)
+            if (_on == true)
             {
                 return $"Playing channel {_channel}";
             }
@@ -34,17 +34,22 @@ namespace RadioApp
 
         public void TurnOff()
         {
-            On = false;
+            _on = false;
             Console.WriteLine("Radio is off");
         }
 
         public void TurnOn()
         {
-            On = true;
+            _on = true;
+        }
+
+        public bool IsOn()
+        {
+            return _on;
         }
 
         public int IncreaseVolume()
-        {
+        {   
             if (_volume > _maxVolume)
             {
                 throw new Exception("Cannot increase the volume over 100.");

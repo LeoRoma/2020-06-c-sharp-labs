@@ -12,7 +12,7 @@ namespace RadioTests
         public void Setup()
         {
             _radio = new Radio();
-            _radio.TurnOn();
+       
         }
 
         [TestCase(31)]
@@ -26,6 +26,7 @@ namespace RadioTests
         [Test]
         public void IncreaseVolumeOverThan100Test()
         {
+
             for (int i = 1; i < 71; i++)
             {
                 _radio.IncreaseVolume();
@@ -33,8 +34,6 @@ namespace RadioTests
 
             Assert.AreEqual(101, _radio.IncreaseVolume());
             var ex = Assert.Throws<Exception>(() => _radio.IncreaseVolume());
-            //Assert.AreEqual("Cannot increase the volume over 100.", ex.Message);
-            //Assert.AreEqual("Can not increase volume over 100.");
         }
 
         [TestCase(29)]
@@ -45,18 +44,19 @@ namespace RadioTests
             Assert.AreEqual(decreasedVolume, _radio.DecreaseVolume());
         }
 
-        [Test]
-        public void DecreaseVolumeLessThan0Test()
+        [TestCase(false)]
+        public void ReturnFalseIsOnMethodTest(bool isOff)
         {
-            for (int i = 1; i < 31; i++)
-            {
-                _radio.DecreaseVolume();
-            }
-
-            Assert.AreEqual(-1, _radio.DecreaseVolume());
-            var ex = Assert.Throws<Exception>(() => _radio.DecreaseVolume());
-            //Assert.AreEqual("Cannot increase the volume over 100.", ex.Message);
-            //Assert.AreEqual("Can not increase volume over 100.");
+            _radio.TurnOff();
+            var isOn = _radio.IsOn();
+            Assert.AreEqual(isOff, isOn);
+        }
+        [TestCase(true)]
+        public void ReturnTrueIsOnMethodTest(bool isOn)
+        {
+            _radio.TurnOn();
+            var on = _radio.IsOn();
+            Assert.AreEqual(isOn, on);
         }
     }
 }

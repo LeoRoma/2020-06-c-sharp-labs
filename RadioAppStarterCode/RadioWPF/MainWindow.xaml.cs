@@ -71,7 +71,7 @@ namespace RadioWPF
 
         private void ButtonPower_Click(object sender, RoutedEventArgs e)
         {
-            if (radio.On == false)
+            if (radio.IsOn() == false)
             {
                 radio.TurnOn();
                 display = "Power on";
