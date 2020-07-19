@@ -59,21 +59,19 @@ namespace RadioWPF
 
         private void ButtonIncreaseVolume_Click(object sender, RoutedEventArgs e)
         {
-            //radio.IncreaseVolume();
             display = $"Volume: {radio.IncreaseVolume()}";
             LabelDisplay.Content = display;
         }
 
         private void ButtonDecreaseVolume_Click(object sender, RoutedEventArgs e)
         {
-            radio.DecreaseVolume();
             display = $"Volume: {radio.DecreaseVolume()}";
             LabelDisplay.Content = display;
         }
 
         private void ButtonPower_Click(object sender, RoutedEventArgs e)
         {
-            if (radio._on == false)
+            if (radio.On == false)
             {
                 radio.TurnOn();
                 display = "Power on";
@@ -85,7 +83,7 @@ namespace RadioWPF
                 display = "Power off";
                 LabelDisplay.Content = display;
             }
-           
+
         }
     }
 }

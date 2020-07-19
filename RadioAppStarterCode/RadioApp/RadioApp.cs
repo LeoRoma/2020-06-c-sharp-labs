@@ -5,7 +5,7 @@ namespace RadioApp
     public class Radio
     {
         private int _channel = 1;
-        public bool _on;
+        public bool On;
         private const int _defaultVolume = 30;
         private const int _maxVolume = 100;
         private const int _minVolume = 0;
@@ -14,7 +14,7 @@ namespace RadioApp
         public int Channel 
         {
             get { return _channel; }  
-            set { if (value > 0 && value <= 4 && _on == true) _channel = value; }
+            set { if (value > 0 && value <= 4 && On == true) _channel = value; }
         }
 
         public Radio()
@@ -24,7 +24,7 @@ namespace RadioApp
 
         public string Play()
         {
-            if (_on == true)
+            if (On == true)
             {
                 return $"Playing channel {_channel}";
             }
@@ -34,13 +34,13 @@ namespace RadioApp
 
         public void TurnOff()
         {
-            _on = false;
+            On = false;
             Console.WriteLine("Radio is off");
         }
 
         public void TurnOn()
         {
-            _on = true;
+            On = true;
         }
 
         public int IncreaseVolume()

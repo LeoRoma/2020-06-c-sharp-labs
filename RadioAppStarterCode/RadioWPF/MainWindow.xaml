@@ -8,19 +8,19 @@
         Title="MainWindow" Height="250" Width="800" Background="Black">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.75*"/>
+            <ColumnDefinition Width="0.55*"/>
+            <ColumnDefinition Width="0.25*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="0.75*"/>
+            <ColumnDefinition Width="0.25*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="0.15*" />
+            <RowDefinition Height="0.50*" />
             <RowDefinition Height="0.25*" />
-            <RowDefinition Height="0.75*" />
-            <RowDefinition Height="0.35*" />
-            <RowDefinition Height="0.25*" />
+            <RowDefinition Height="0.15*" />
         </Grid.RowDefinitions>
 
         <!--Display-->
@@ -97,4 +97,5 @@
             </Button.Resources>
         </Button>
     </Grid>
+
 </Window>
