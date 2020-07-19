@@ -24,11 +24,11 @@
         </Grid.RowDefinitions>
 
         <!--Display-->
-        <Label x:Name="LabelDisplay" Grid.Row="1" Grid.Column="2" Background="#152736" Foreground="White" Grid.ColumnSpan="4" Content="hi" HorizontalContentAlignment="Center" 
+        <Label x:Name="LabelDisplay" Grid.Row="1" Grid.Column="2" Background="DarkBlue" Foreground="White" Grid.ColumnSpan="4" Content="" HorizontalContentAlignment="Center" 
                FontSize="35" VerticalContentAlignment="Center" />
 
         <!--Button Power-->
-        <Button Grid.Row="1" Grid.Column="0" Background="#505050" Foreground="White" Content='Pow' VerticalContentAlignment="Center" FontSize="25"
+        <Button Grid.Row="1" Grid.Column="0" Background="Red" Foreground="White" Content='Pow' VerticalContentAlignment="Center" FontSize="25"
                 HorizontalContentAlignment="Center" Click="ButtonPower_Click" Width="50" Height="50" >
             <Button.Resources>
                 <Style TargetType="Border">
@@ -38,7 +38,7 @@
         </Button>
 
         <!--Button IncreaseVolume-->
-        <Button Grid.Row="1" Grid.Column="1" Background="#505050" Foreground="White" Content='+' VerticalContentAlignment="Center" FontSize="25"
+        <Button Grid.Row="1" Grid.Column="1" Background="#e85810" Foreground="White" Content='+' VerticalContentAlignment="Center" FontSize="25"
                 HorizontalContentAlignment="Center" Click="ButtonIncreaseVolume_Click" Width="25" Height="50">
             <Button.Resources>
                 <Style TargetType="Border">
@@ -48,7 +48,7 @@
         </Button>
 
         <!--Button DecreaseVolume-->
-        <Button Grid.Row="2" Grid.Column="1" Background="#505050" Foreground="White" Content='-' VerticalContentAlignment="Center" FontSize="25"
+        <Button Grid.Row="2" Grid.Column="1" Background="#e85810" Foreground="White" Content='-' VerticalContentAlignment="Center" FontSize="25"
                 HorizontalContentAlignment="Center" Click="ButtonDecreaseVolume_Click" Width="25" Height="45">
             <Button.Resources>
                 <Style TargetType="Border">
@@ -58,7 +58,7 @@
         </Button>
 
         <!--Button 1-->
-        <Button Grid.Row="2" Grid.Column="2" Background="#505050" Foreground="White" Content='1' VerticalContentAlignment="Center" FontSize="25"
+        <Button Grid.Row="2" Grid.Column="2" Background="#32527b" Foreground="White" Content='1' VerticalContentAlignment="Center" FontSize="25"
                 HorizontalContentAlignment="Center" Click="Button01_Click" >
             <Button.Resources>
                 <Style TargetType="Border">
@@ -68,7 +68,7 @@
         </Button>
 
         <!--Button 2-->
-        <Button Grid.Row="2" Grid.Column="3" Background="#505050" Foreground="White" Content='2' VerticalContentAlignment="Center" FontSize="25"
+        <Button Grid.Row="2" Grid.Column="3" Background="#32527b" Foreground="White" Content='2' VerticalContentAlignment="Center" FontSize="25"
                 HorizontalContentAlignment="Center" Click="Button02_Click" >
             <Button.Resources>
                 <Style TargetType="Border">
@@ -78,7 +78,7 @@
         </Button>
 
         <!--Button 3-->
-        <Button Grid.Row="2" Grid.Column="4" Background="#505050" Foreground="White" Content='3' VerticalContentAlignment="Center" FontSize="25"
+        <Button Grid.Row="2" Grid.Column="4" Background="#32527b" Foreground="White" Content='3' VerticalContentAlignment="Center" FontSize="25"
                 HorizontalContentAlignment="Center" Click="Button03_Click" >
             <Button.Resources>
                 <Style TargetType="Border">
@@ -88,7 +88,7 @@
         </Button>
 
         <!--Button 4-->
-        <Button Grid.Row="2" Grid.Column="5" Background="#505050" Foreground="White" Content='4' VerticalContentAlignment="Center" FontSize="25"
+        <Button Grid.Row="2" Grid.Column="5" Background="#32527b" Foreground="White" Content='4' VerticalContentAlignment="Center" FontSize="25"
                 HorizontalContentAlignment="Center" Click="Button04_Click" >
             <Button.Resources>
                 <Style TargetType="Border">
