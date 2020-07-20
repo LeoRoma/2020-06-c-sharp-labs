@@ -44,6 +44,19 @@ namespace RadioTests
             Assert.AreEqual(decreasedVolume, _radio.DecreaseVolume());
         }
 
+        [Test]
+        public void DEcreaseVolumeOverThan100Test()
+        {
+
+            for (int i = 1; i <31; i++)
+            {
+                _radio.DecreaseVolume();
+            }
+
+            Assert.AreEqual(-1, _radio.DecreaseVolume());
+            var ex = Assert.Throws<Exception>(() => _radio.DecreaseVolume());
+        }
+
         [TestCase(false)]
         public void ReturnFalseIsOnMethodTest(bool isOff)
         {
