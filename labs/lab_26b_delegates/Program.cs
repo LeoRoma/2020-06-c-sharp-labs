@@ -14,14 +14,14 @@ namespace lab_26b_delegates
             Delegate01 delegateInstance = Method01;
             Action myOtherDelegateInstance = Method02;
 
-            // Declare
+            // Declare DelegateTest
             Delegate02 delegateTest = GetString;
 
             // run 
             delegateInstance();
             myOtherDelegateInstance();
 
-            // run
+            // run Delegate Test
             Console.WriteLine(delegateTest(20, false));
             Console.WriteLine(delegateTest(10, true));
         }
