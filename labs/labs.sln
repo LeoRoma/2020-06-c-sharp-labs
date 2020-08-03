@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_23_demo_api", "lab_23_d
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_24_api_core_demo", "lab_24_api_core_demo\lab_24_api_core_demo.csproj", "{BD6C5BDD-1581-4B3C-9E55-FFC42816FA5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_25_cats_api", "lab_25_cats_api\lab_25_cats_api.csproj", "{5BC42939-6CCF-40BC-BAC4-F60792AA8143}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{BD6C5BDD-1581-4B3C-9E55-FFC42816FA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD6C5BDD-1581-4B3C-9E55-FFC42816FA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD6C5BDD-1581-4B3C-9E55-FFC42816FA5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BC42939-6CCF-40BC-BAC4-F60792AA8143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC42939-6CCF-40BC-BAC4-F60792AA8143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC42939-6CCF-40BC-BAC4-F60792AA8143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC42939-6CCF-40BC-BAC4-F60792AA8143}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

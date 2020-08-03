@@ -1,10 +1,15 @@
 ﻿--use master;
 
+--drop database if exists CatDB
+--go
+
 --create database CatDB
 --go
 
 --use CatDB
 --go
+
+--drop table if exists Cats
 
 --create table Cats(
 --	CatID int not null identity primary key,
