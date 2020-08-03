@@ -27,7 +27,7 @@ namespace lab_25_cats_api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<CatDBContext>(options => options.UseSqlServer("Data Source = (localdb)\\mssqllocaldb;Initial Catalog = CatDB;"));
+            services.AddDbContext<CatDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("CatConnectionString")));
             services.AddControllers();
         }
 
