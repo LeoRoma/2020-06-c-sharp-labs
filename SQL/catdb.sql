@@ -10,6 +10,7 @@
 --go
 
 --drop table if exists Cats
+--drop table if exists Breeds
 
 --create table Cats(
 --	CatID int not null identity primary key,
@@ -22,4 +23,12 @@
 --insert into Cats values ('Lucy', 15, 'Sphinx')
 --insert into Cats values ('Jasper', 15, 'Great cat')
 
-select * from Cats
+--use CatDB
+
+--create table Breeds(
+--	BreedId int not null identity primary key,
+--	BreedName nvarchar(50),
+--)
+
+insert into Breeds (BreedName) values('Mainecoon'), ('Sphinx'), ('Tabby')
+select * from breeds

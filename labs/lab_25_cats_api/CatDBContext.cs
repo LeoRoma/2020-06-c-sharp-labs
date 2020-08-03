@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace lab_25_cats_api.Models
+namespace lab_25_cats_api
 {
     public partial class CatDBContext : DbContext
     {
