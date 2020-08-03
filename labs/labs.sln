@@ -41,8 +41,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_17_strings_arrays", "la
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_18_iterations", "lab_18_iterations\lab_18_iterations.csproj", "{DF40248A-34C2-46F4-8657-04785CD903F1}"
 EndProject
-
-
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_23_demo_api", "lab_23_demo_api\lab_23_demo_api.csproj", "{CA26C944-AF7A-4F6C-8AE7-1A75051CCBB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_24_api_core_demo", "lab_24_api_core_demo\lab_24_api_core_demo.csproj", "{BD6C5BDD-1581-4B3C-9E55-FFC42816FA5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -126,7 +127,14 @@ Global
 		{DF40248A-34C2-46F4-8657-04785CD903F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF40248A-34C2-46F4-8657-04785CD903F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF40248A-34C2-46F4-8657-04785CD903F1}.Release|Any CPU.Build.0 = Release|Any CPU
-
+		{CA26C944-AF7A-4F6C-8AE7-1A75051CCBB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA26C944-AF7A-4F6C-8AE7-1A75051CCBB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA26C944-AF7A-4F6C-8AE7-1A75051CCBB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA26C944-AF7A-4F6C-8AE7-1A75051CCBB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD6C5BDD-1581-4B3C-9E55-FFC42816FA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6C5BDD-1581-4B3C-9E55-FFC42816FA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6C5BDD-1581-4B3C-9E55-FFC42816FA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6C5BDD-1581-4B3C-9E55-FFC42816FA5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
