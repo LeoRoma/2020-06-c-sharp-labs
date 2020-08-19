@@ -30,8 +30,10 @@ namespace lab_27_basic_event
             MyEvent();
 
             EventName += GetName;
+            EventName += GetFullName;
 
             Console.WriteLine(EventName("Leo", "Xia"));
+            Console.WriteLine(EventName("Leon", "Xia"));
         }
 
         static void Method01()
@@ -50,6 +52,11 @@ namespace lab_27_basic_event
         }
 
         static string GetName(string fName, string lName)
+        {
+            return $"First name: {fName}, Last name: {lName}";
+        }
+
+        static string GetFullName(string fName, string lName)
         {
             return $"First name: {fName}, Last name: {lName}";
         }

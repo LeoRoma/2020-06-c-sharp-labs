@@ -47,15 +47,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_24_api_core_demo", "lab
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_25_cats_api", "lab_25_cats_api\lab_25_cats_api.csproj", "{5BC42939-6CCF-40BC-BAC4-F60792AA8143}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_26_delegates", "lab_26_delegates\lab_26_delegates.csproj", "{66F61FC5-2031-471F-BB03-5088018D3579}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_26_delegates", "lab_26_delegates\lab_26_delegates.csproj", "{66F61FC5-2031-471F-BB03-5088018D3579}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_26b_delegates", "lab_26b_delegates\lab_26b_delegates.csproj", "{FF5C622D-A961-4398-ADC3-02DCD37B400A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_26b_delegates", "lab_26b_delegates\lab_26b_delegates.csproj", "{FF5C622D-A961-4398-ADC3-02DCD37B400A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_26c_delegates_with_lambda", "lab_26c_delegates_with_lambda\lab_26c_delegates_with_lambda.csproj", "{4E0D85FB-BAF0-4570-BA10-50E10F910264}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_26c_delegates_with_lambda", "lab_26c_delegates_with_lambda\lab_26c_delegates_with_lambda.csproj", "{4E0D85FB-BAF0-4570-BA10-50E10F910264}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_27_basic_event", "lab_27_basic_event\lab_27_basic_event.csproj", "{5A68F973-4F07-4379-81A3-2A8853E9DDB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_27_basic_event", "lab_27_basic_event\lab_27_basic_event.csproj", "{5A68F973-4F07-4379-81A3-2A8853E9DDB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_27b_oop_events", "lab_27b_oop_events\lab_27b_oop_events.csproj", "{8B75C3E8-45EE-4375-8CDD-368880491213}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab_27b_oop_events", "lab_27b_oop_events\lab_27b_oop_events.csproj", "{8B75C3E8-45EE-4375-8CDD-368880491213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab_28_tasks", "lab_28_tasks\lab_28_tasks.csproj", "{189EC11D-9170-45E4-8D47-AC59FE7FC3C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,10 @@ Global
 		{8B75C3E8-45EE-4375-8CDD-368880491213}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B75C3E8-45EE-4375-8CDD-368880491213}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B75C3E8-45EE-4375-8CDD-368880491213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{189EC11D-9170-45E4-8D47-AC59FE7FC3C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{189EC11D-9170-45E4-8D47-AC59FE7FC3C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{189EC11D-9170-45E4-8D47-AC59FE7FC3C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{189EC11D-9170-45E4-8D47-AC59FE7FC3C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
