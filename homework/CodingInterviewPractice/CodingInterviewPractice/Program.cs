@@ -10,6 +10,7 @@ namespace CodingInterviewPractice
             {
                 Console.WriteLine(FizzBuzz(i));
             }
+            Loops();
            
         }
 
@@ -31,6 +32,48 @@ namespace CodingInterviewPractice
             else
             {
                 return num.ToString();
+            }
+        }
+
+        // Loops
+        //Code out a loop with the break keyword Code out a loop with the continue keyword Create a loop that outputs the numbers 1 to 300 to the screen.
+        //For every 100th number, have the program output your name, a greeting, or anything else you want to the screen.
+        //Same as the one above, but for every 5th, 105th, 205th, etc number.Count down from 50 to 0 and output the numbers to the screen.
+
+        public static void Loops()
+        {
+            int i = 1;
+            while(i <= 400)
+            {
+                if (i == 300)       
+                {
+                    break;
+                }
+                else if (i == 5 || i == 105 || i == 205)
+                {
+                    
+                    Console.WriteLine($"{i}th");
+                    i++;
+                    continue;
+                }
+                else if(i % 100 == 0)
+                {
+                    Console.WriteLine("Hello I am Leo");
+                    i++;
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                    i++;
+                }
+                
+               
+            }
+
+            for (int n = 50; n >= 0; n--)
+            {
+                Console.WriteLine(n);
             }
         }
     }
