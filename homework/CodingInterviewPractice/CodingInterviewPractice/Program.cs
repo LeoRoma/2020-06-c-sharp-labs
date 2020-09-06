@@ -144,6 +144,58 @@ namespace CodingInterviewPractice
 
     /* Input numbers and put into an ArrayList, Create an Array, List, Queue, Stack, Dictionary. 
      * Move objects from Arraylist to each item and multiply each number by 4 each move. What's the total? */
+    public class ArraylistArrayListQueueStackDictionarySum
+    {
+        public int TestArrayListArrayListQueueStackDictionarySum(int[] inputArray)
+        {
+            int total = 0;
+            var dictionaryIndex = 1;
+            int[] newArray = new int[inputArray.Length];
+            List<int> newList = new List<int>();
+            Queue<int> newQueue = new Queue<int>();
+            Stack<int> newStack = new Stack<int>();
+            Dictionary<int, int> newDictionary = new Dictionary<int, int>();
+
+            // Into Array
+            for (int i = 0; i < inputArray.Length; i++)
+            {
+                newArray[i] = inputArray[i] * 4;
+            }
+
+            // Stack
+            foreach (var num in newArray)
+            {
+                newList.Add(num * 4);
+            }
+
+            // Queue
+            foreach (var num in newList)
+            {
+                newQueue.Enqueue(num * 4);
+            }
+
+            // Stack
+            foreach (var num in newQueue)
+            {
+                newStack.Push(num * 4);
+            }
+
+            // Dictionary
+            foreach (var num in newStack)
+            {
+
+                newDictionary.Add(dictionaryIndex, num * 4);
+                dictionaryIndex += 1;
+            }
+
+            // Total
+            foreach (var num in newDictionary)
+            {
+                total += num.Value;
+            }
+            return total;
+        }
+    }
 
     // Return total of array, list, dictionary
 
@@ -163,7 +215,6 @@ namespace CodingInterviewPractice
 
             for (int i = 0; i < newList.Count; i++)
             {
-                Console.WriteLine(newList[i]);
                 newDictionary.Add(i, newList[i] - 10);
             }
 
