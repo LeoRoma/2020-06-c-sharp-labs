@@ -107,4 +107,38 @@ namespace CodingInterviewPractice
             return 0;
         }
     }
+
+    // Return total of array items after passing through loops
+    ///* Pass in array [10,11,15,25.. 
+    /// While loop ==> add one to each number [11,12,16 Do..While loop ==> add 3 to each number [14,15,19.. 
+    /// Foreach loop ==> double each number [28,30,38... Return the total *
+    
+    public class Loop
+    {
+        public int TestArrayLoops(int[] inputArray)
+        {
+            int total = 0;
+            int i = 0;
+
+            while (i < inputArray.Length)
+            {
+                inputArray[i] += 1;
+                i++;
+            }
+            i = 0;
+            do
+            {
+                inputArray[i] += 3;
+                i++;
+            } while (i < inputArray.Length);
+
+            foreach(var num in inputArray)
+            {
+               total += num * 2;
+            }
+            return total;
+        }
+    }
+
+
 }
