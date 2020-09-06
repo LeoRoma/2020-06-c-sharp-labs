@@ -156,13 +156,13 @@ namespace CodingInterviewPractice
             Stack<int> newStack = new Stack<int>();
             Dictionary<int, int> newDictionary = new Dictionary<int, int>();
 
-            // Into Array
+            // Array
             for (int i = 0; i < inputArray.Length; i++)
             {
                 newArray[i] = inputArray[i] * 4;
             }
 
-            // Stack
+            // List
             foreach (var num in newArray)
             {
                 newList.Add(num * 4);
