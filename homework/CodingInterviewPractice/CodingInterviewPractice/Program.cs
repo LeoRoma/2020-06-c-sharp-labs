@@ -45,13 +45,12 @@ namespace CodingInterviewPractice
             int i = 1;
             while(i <= 400)
             {
-                if (i == 300)       
+                if (i == 301)       
                 {
                     break;
                 }
                 else if (i == 5 || i == 105 || i == 205)
-                {
-                    
+                {          
                     Console.WriteLine($"{i}th");
                     i++;
                     continue;
@@ -66,15 +65,46 @@ namespace CodingInterviewPractice
                 {
                     Console.WriteLine(i);
                     i++;
-                }
-                
-               
+                }            
             }
 
             for (int n = 50; n >= 0; n--)
             {
                 Console.WriteLine(n);
             }
+        }
+
+        
+    }
+    //Prime Factors - Sum the prime factors of an integer input by the user
+    public class Prime
+    {
+        public int SumOfPrime(int[] inputArray)
+        {
+            int result = 0;
+            foreach (var num in inputArray)
+            {
+                result += GetPrime(num);
+            }
+            return result;
+        }
+
+        public int GetPrime(int num)
+        {
+            bool isPrime = true;
+            for (int i = 2; i <= num; i++)
+            {
+                if (num != i && num % i == 0)
+                {
+                    isPrime = false;
+                }
+            }
+            if (isPrime)
+            {
+                return num;
+            }
+            isPrime = true;
+            return 0;
         }
     }
 }
