@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CodingInterviewPractice
 {
@@ -139,6 +140,38 @@ namespace CodingInterviewPractice
             return total;
         }
     }
+    // Return total of ArrayList, Array, List, Queue, Stack, Dictionary
 
+    /* Input numbers and put into an ArrayList, Create an Array, List, Queue, Stack, Dictionary. 
+     * Move objects from Arraylist to each item and multiply each number by 4 each move. What's the total? */
 
+    // Return total of array, list, dictionary
+
+    /* Iterate over the array, extract the numbers, square the numbers, 
+     * and add to a List Iterate over the list, subtract 10, add to a Dictionary<int, int> Iterate over dictionary and return sum */
+    public class ArrayListDictionarySum
+    {
+        public int TestArrayListDictionarySum(int[] inputArray) 
+        {
+            int total = 0;
+            List<int> newList = new List<int>();
+            Dictionary<int, int> newDictionary = new Dictionary<int, int>();
+            foreach(var num in inputArray)
+            {
+                newList.Add((int)Math.Sqrt(num));
+            }
+
+            for (int i = 0; i < newList.Count; i++)
+            {
+                Console.WriteLine(newList[i]);
+                newDictionary.Add(i, newList[i] - 10);
+            }
+
+            foreach (var num in newDictionary)
+            {
+                total += num.Value;
+            }
+            return total; 
+        }
+    }    
 }
